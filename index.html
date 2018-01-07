@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Coding & Cupcakes Website Presentation</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/cupcakes.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,83 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section id="title">
+					<img class="plain logo" src="img/logo-cupcakes.png" alt="">
+					<div class="wifi">
+						Wifi: network / password
+					</div>
+				</section>
+				<section id="sponsors">
+					<h2>Our Sponsors</h2>
+					<div class="logos">
+						<img class="plain" src="img/google_fiber.png" alt="">
+						<img class="plain" src="img/dst.svg" alt="">
+					</div>
+				</section>
+				<section id="host">
+					<h2>Our Host</h2>
+					<div class="logos">
+					</div>
+				</section>
+				<section id="team">
+					<h2>Our team</h2>
+					<div class="team">
+						<div class="member">
+							<p class="name">Cristy Schneider</p>
+							<p class="role">Co-Director</p>
+						</div>
+						<div class="member">
+							<img src="img/adrienne.jpg" alt="Adrienne Anderson">
+							<p class="name">Adrienne Anderson</p>
+							<p class="role">Technical Materials Director</p>
+						</div>
+						<div class="member">
+							<img src="img/muriel.jpg" alt="Muriel Green">
+							<p class="name">Muriel <br />Green</p>
+							<p class="role">Curriculum Director</p>
+						</div>
+						<div class="member">
+							<p class="name">Patricia Robinson</p>
+							<p class="role">Marketing Director</p>
+						</div>
+					</div>
+				</section>
+				<section id="mentors">
+					<h2>Mentors!</h2>
+					<p>Here to help and answer your questions!</p>
+				</section>
+				<section id="goals">
+					<h2>Goals for Today</h2>
+					<h3 class="fragment">Get excited about coding!</h3>
+					<p class="fragment">Learn to use tools like Github and Codeanywhere</p>
+					<p class="fragment">Explore HTML & CSS basics</p>
+					<p class="fragment">Discover other coding opportunities</p>
+				</section>
+				<section id="tools">
+					<h2>Our Tools</h2>
+					<ul>
+						<li>Chrome - our preferred browser</li>
+						<li>Github - a place to store our code</li>
+						<li>Codeanywhere - a tool to edit our code</li>
+					</ul>
+				</section>
+				<section id="getstarted">
+					<h2>Getting Started</h2>
+					<p>1. Create an account on Github - <a href="https://github.com/">https://github.com/</a></p>
+					<p>2. Verify your Github account in your email</p>
+					<p>3. Go to this link and hit the fork button:<br />
+						<a href="https://github.com/KansasCityWomeninTechnology/codingandcupcakes">https://github.com/KansasCityWomeninTechnology/codingandcupcakes</a></p>
+				</section>
+				<section id="break">
+					<h2>Cupcake Break!</h2>
+					<img src="img/cupcakes.jpg" alt="" class="plain logo">
+				</section>
+				<section id="final">
+					<h2>Before You Go</h2>
+					<p>Please take our <b><a href="https://docs.google.com/forms/d/e/1FAIpQLSdKlS1CXl3lq1FuCNgFuoBucqZhq4f7Yr2V67PMp0IiuhfuBg/viewform">survey</a></b> - let us know what you thought!</p>
+					<p>Sign up for a Jewelbots Session!</p>
+					<p>Check out CoderDojoKC next month! <a href="http://coderdojokc.com"></a></p>
+				</section>
 			</div>
 		</div>
 
@@ -37,6 +112,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				history: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },

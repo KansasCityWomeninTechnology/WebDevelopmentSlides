@@ -1,0 +1,113 @@
+/**
+ *
+ *
+ *
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/lato/lato.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #8388af;
+
+$mainColor: #464646;
+$headingColor: #464646;
+
+$mainFontSize: 42px;
+$mainFont: 'Lato', Helvetica, sans-serif;
+$headingFont: 'Lato', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #222;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+body {
+  background: #484e78;
+  background: -moz-radial-gradient(center, circle cover, #f0b5d1 0%, #be7f9d 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f0b5d1), color-stop(100%, #be7f9d));
+  background: -webkit-radial-gradient(center, circle cover, #f0b5d1 0%, #be7f9d 100%);
+  background: -o-radial-gradient(center, circle cover, #f0b5d1 0%, #be7f9d 100%);
+  background: -ms-radial-gradient(center, circle cover, #f0b5d1 0%, #be7f9d 100%);
+  background: radial-gradient(center, circle cover, #f0b5d1 0%, #be7f9d 100%);
+}
+
+.logo {
+  width: 50%;
+}
+
+#sponsors {
+  .logos {
+    display: flex;
+    img {
+      align-self: center;
+      width: 50%;
+    }
+  }
+
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  .member {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    img {
+      width: 60%;
+      border-radius: 20%;
+      border: none;
+      margin: 0px auto;
+    }
+    p.name {
+      font-size: 80%;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    p.role {
+      font-size: 70%;
+      margin-top: 0px;
+    }
+  }
+}
+.reveal a {
+  color: #ef3965;
+  &:hover {
+    color: #ef3965;
+    text-decoration: underline;
+  }
+}
+.reveal .progress {
+  color: #ef3965;
+}
+
+.reveal .controls {
+  color: #ef3965;
+}
