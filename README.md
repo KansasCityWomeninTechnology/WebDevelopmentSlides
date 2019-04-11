@@ -1,3 +1,5 @@
+# This GitHub repo is now deprecated. The Web Development Slides current version is [here](https://docs.google.com/presentation/d/1HDiQp0uHq6kDYdCkHoxNXO-B6aGSwYA9pN6vZS3xEgE/edit#slide=id.p), in Google Drive.
+
 # Coding & Cupcakes Slides
 
 1. In the command line run: `git clone https://github.com/KansasCityWomeninTechnology/WebDevelopmentSlides.git`
